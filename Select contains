@@ -1,0 +1,2 @@
+var allowedStatus = new[]{ "A", "B", "C" };
+var filteredOrders = orders.Order.Where(o => allowedStatus.Contains(o.StatusCode))
