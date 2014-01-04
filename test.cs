@@ -1,4 +1,4 @@
-private List<CiaAerea> ValidaCadastroCiaAerea()
+﻿private List<CiaAerea> ValidaCadastroCiaAerea()
         {
             List<CiaAerea> itens = new List<CiaAerea>();
             try
@@ -6,6 +6,7 @@ private List<CiaAerea> ValidaCadastroCiaAerea()
                 if (!String.IsNullOrEmpty(hddCiaAereaValida.Value))
                 {
                     string[] itensArray = hddCiaAereaValida.Value.Split(',');
+		    //teste	
                     foreach (var i in itensArray)
                     {
                         if (bll.ListaCiasAereasPorSigla(i.ToString()).Any())
